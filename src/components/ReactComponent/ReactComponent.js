@@ -55,7 +55,7 @@ export default class ReactComponent extends Component {
 	render() {
 		let { component } = this.props;
 		return (
-			<div className={s.root}>
+			<div className={s.root} id={component.name}>
 				<header className={s.header}>
 					<h2 className={s.heading}>{component.name}</h2>
 					<div className={s.sourcePath}>{component.relativePath}</div>

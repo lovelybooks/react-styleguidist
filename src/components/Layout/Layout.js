@@ -19,6 +19,11 @@ export default class Layout extends Component {
 			<div className={s.root}>
 				<div className={s.content}>
 					<h1 className={s.heading}>{title}</h1>
+					<ul className={s.tableOfContents}>
+						{components.map(component => (
+							<li><a href={'#' + component.name}>{component.name}</a></li>
+						))}
+					</ul>
 					<div>
 						<Components highlightTheme={highlightTheme} components={components}/>
 					</div>
