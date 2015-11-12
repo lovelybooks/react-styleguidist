@@ -165,10 +165,6 @@ module.exports = function(env) {
 											imports: ['react'],
 											locals: ['module']
 										},
-										{
-											transform: 'react-transform-catch-errors',
-											imports: ['react', 'redbox-react']
-										}
 									]
 								}
 							}
