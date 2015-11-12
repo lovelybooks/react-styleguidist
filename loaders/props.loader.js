@@ -9,7 +9,7 @@ module.exports = function (source) {
 	   props = reactDocs.parse(source);
     }
     catch (e) {
-        console.log('Error when parsing', path.basename(this.request));
+        console.log('Error when parsing', this.request);
         console.log(e.toString());
         console.log();
         props = {};
